@@ -1,0 +1,259 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP FORM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('images/11.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 5px;
+            max-width: 420px;
+            height: 550px;
+            margin: 100px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: plum;
+            color: black;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            height: 550;
+            width: 400px;
+            background-color: palevioletred;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover{
+            color: whitesmoke;
+        }
+
+        /* Style for the first name and last name to be on the same line */
+        .name-group {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 15px;
+            text-align: top ;
+
+        }
+
+        .name-group input {
+            width: 150px; 
+            margin-top: 30px;
+        }
+
+        .gender{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 10px;
+            text-align: top;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <form action="signup_process" method="post">
+        <center><h2>SIGN UP FORM</h2></center>
+        <div class="name-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+
+        <label>Gender</label>
+        <button><label><input type="button" name="gender" value="male" required> </label></button>
+        <button><label><input type="button" name="gender" value="female" required> </label></button>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="SIGN UP NOW">
+
+        <center><a href="login.html">Click here to login Page</a></center>
+    </form>
+
+</body>
+</html>-->
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up page</title>
+    <style>
+      body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  line-height: 25px;
+            height: 100vh;
+            background-image: url('images/11.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+
+form {
+  text-align: center;
+  width: 400px;
+  padding: 50px;
+  font-weight: normal;
+  background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 5px;
+            max-width: 420px;
+            height: 650px;
+            margin: 100px auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5px;
+}
+#firstnamediv,
+#lastnamediv {
+  display: inline-block;
+  text-align: left;
+}
+
+#lastnamediv{
+    display: inline-block;
+    text-align: left;
+    top: 2px;
+}
+input{
+    padding: 10px;
+    border-style: none;
+}
+#genderdiv{
+    padding: 5px;
+    display:flex;
+    flex-direction: row;
+    text-align: left;
+    background-color: #fff;
+    justify-content: center;
+}
+.genderbtn{
+  margin: 0 20px 0 0;
+}
+button{
+    padding: 8px;
+    margin-top: 10px;
+    background-color: wheat;
+    border-style:none ;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+    text-transform: capitalize;
+    ;
+}
+a{
+  color:whitesmoke;
+}
+
+    </style>
+     </head>
+     <body>
+      <div class="parent">
+        <form action="">
+          <h2>SIGN UP FORM</h2>
+  
+          <div id="firstnamediv" class="input-group">
+            <label for="firstname" class="firstlabel">First Name</label>
+            <br />
+            <input type="text" name="firstname" class="firstname"/>
+          </div>
+  
+          <div id="lastnamediv" class="input-group">
+            <label for="lastname" class="lastlabel">Last Name</label>
+            <br />
+            <input type="text" name="lastname" class="lastname" />
+          </div>
+  
+          <div id="emaildiv" class="input-group">
+            <label for="email" style="display: block">Email Address</label>
+            <input type="email" name="email" class="email" />
+          </div>
+  
+          <div class="input-group">
+            <label for="">Gender</label>
+            <div id="genderdiv" class="input-group">
+              <button  class="genderbtn" name="genderbtn">Male</button>
+              <button  class="genderbtn" name="genderbtn">Female</button>
+            </div>
+          </div>
+          <div id="citydiv" class="input-group">
+            <label for="city">City</label>
+            <input type="text" name="city" />
+          </div>
+          <div id="country" class="input-group">
+            <label for="country">Country</label>
+            <input type="text" name="contry" />
+          </div>
+  
+          <div id="password" class="input-group">
+            <label for="pass">Password</label>
+            <input type="password" name="pass" minlength="8" />
+          </div>
+  
+          <div id="button" class="input-group">
+            <button style="text-transform: uppercase;letter-spacing: 2px;font-size: large;">Sign Up now</button>
+          </div>
+          <h3>click here for <a href="login.html">login</a> page</h3>
+        </form>
+      </div>
+  
+     </body>
+</html>

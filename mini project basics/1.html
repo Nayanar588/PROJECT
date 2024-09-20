@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background color chnaging</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>The Backgroundcolor is: <span class="color" >white</span></h2>
+            <button class="btn-hero" id="btn">Change Background</button>
+        </div>
+         </main>
+
+        <script type="text/javascript">
+            var colors=['white','green','yellow','orange','pink','blue'];
+            var len=colors.length-1;
+            var buttonControl=document.getElementById('btn');
+            var spanControl=document.querySelector('.color');
+
+            buttonControl.addEventListener('click',()=>{
+                var index=generateRandomnumber();
+                console.log(index)
+                document.body.style.backgroundColor = colors[index];
+                console.log(colors[index])
+                spanControl.textContent=colors[index]
+            })
+
+            function generateRandomnumber(){
+                return Math.round(Math.random()*len)
+            }
+
+
+        </script>
+   
+</body>
+</html>
